@@ -1,0 +1,179 @@
+:root {
+  --bg-color: #f5f7fb;
+  --surface-color: #ffffff;
+  --text-color: #1f2937;
+  --muted-color: #4b5563;
+  --border-color: #dfe3ee;
+  --accent-color: #5b3fd9;
+  --accent-soft: #f1ecff;
+  --shadow-color: rgba(0, 0, 0, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: var(--surface-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.menu {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+.menu a:hover {
+  color: var(--accent-color);
+}
+
+main {
+  padding: 2rem;
+}
+
+#destinatii {
+  margin-bottom: 2rem;
+}
+
+#destinatii h2 {
+  margin-bottom: 1rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.card.featured {
+  background: var(--accent-soft);
+  border: 2px solid var(--accent-color);
+}
+
+.card h3 {
+  margin: 0;
+}
+
+.card p {
+  margin: 0;
+  color: var(--muted-color);
+}
+
+#planifica form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 600px;
+}
+
+#planifica label {
+  font-weight: 700;
+}
+
+#planifica input,
+#planifica select,
+#planifica button {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+#planifica input:focus,
+#planifica select:focus {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+#planifica button {
+  background: var(--accent-color);
+  color: #ffffff;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#planifica button:hover {
+  background: #4a35b5;
+}
+
+#recomandari {
+  margin-top: 2rem;
+}
+
+.recommendations-box {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 1.5rem;
+  max-width: 700px;
+  box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.recommendations-box h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+#recomandari ol {
+  margin: 0;
+  padding-left: 1.5rem;
+  color: var(--muted-color);
+}
+
+#recomandari li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+}
