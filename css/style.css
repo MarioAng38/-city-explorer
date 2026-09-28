@@ -20,6 +20,7 @@ body {
   color: var(--text-color);
 }
 
+/* Exercițiul 2 - soluția: antetul folosește Flexbox */
 .site-header {
   display: flex;
   justify-content: space-between;
@@ -62,6 +63,7 @@ main {
   margin-bottom: 1rem;
 }
 
+/* Exercițiul 2 - soluția: cardurile sunt în Grid responsive */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -79,6 +81,7 @@ main {
   transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
+/* Exercițiul 2 - soluția: hover + card featured */
 .card:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transform: translateY(-2px);
@@ -98,6 +101,7 @@ main {
   color: var(--muted-color);
 }
 
+/* Exercițiul 2 - soluția: formularul are câmpuri unul sub altul */
 #planifica form {
   display: flex;
   flex-direction: column;
@@ -119,6 +123,7 @@ main {
   font-size: 1rem;
 }
 
+/* Exercițiul 2 - soluția: focus pe input/select */
 #planifica input:focus,
 #planifica select:focus {
   outline: 2px solid var(--accent-color);
