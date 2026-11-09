@@ -6,10 +6,10 @@ export default function DestinatieCard({ destinatie, onToggle, onDelete }) {
       <h3>{oras}</h3>
       <p className="tara">{tara}</p>
       <p className="zile">{zile} zile</p>
-      <button onClick={() => onToggle(id)}>
+      <button type="button" onClick={() => onToggle(id)}>
         {vizitat ? 'Vizitat' : 'Marchează vizitat'}
       </button>
-      <button onClick={() => onDelete(id)}>
+      <button type="button" onClick={() => onDelete(id)}>
         Șterge destinația
       </button>
     </article>

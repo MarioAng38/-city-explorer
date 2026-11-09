@@ -1,0 +1,11 @@
+node_modules/
+
+# Temporary Office files
+~$*
+
+# Environment variables
+.env*
+!.env.example
+
+# Build output
+dist/

@@ -29,3 +29,7 @@ export const adaugaDestinatie = (list, destinatie) => [...list, destinatie]
 
 export const stergeDestinatie = (list, id) =>
 	list.filter((destinatie) => destinatie.id !== id)
+
+// Laboratorul 4: acordul numeralului (18 zile, dar 21 de zile)
+export const nr = (n, cuvant) =>
+	(n % 100 >= 20 ? `${n} de ${cuvant}` : `${n} ${cuvant}`)

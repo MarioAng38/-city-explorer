@@ -1,8 +1,9 @@
-// componenta primește trei valori 
-export default function Rezumat({ total, nevizitate, zile }) { 
-return ( 
-<p className="rezumat"> 
-{total} destinații, {nevizitate} nevizitate, {zile} zile de vizitat 
-</p> 
-) 
-} 
+import { nr } from '../utils/destinatii.js'
+
+export default function Rezumat({ total, nevizitate, zile }) {
+  return (
+    <p className="rezumat">
+      {nr(total, 'destinații')}, {nevizitate} nevizitate, {nr(zile, 'zile')} de vizitat
+    </p>
+  )
+}
