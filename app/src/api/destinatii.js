@@ -1,6 +1,6 @@
 // Exercițiul 5: pentru setul mare de date se schimbă TEMPORAR portul în 3002.
 // La final se pune înapoi pe 3001.
-const API_URL = 'http://localhost:3002'
+const API_URL = 'http://localhost:3001'
 
 // Exercițiul 5c: câte destinații cere aplicația pe o pagină.
 // Pentru măsurătorile pe varianta NEPAGINATĂ (fișa, punctul 4) se pune null.
